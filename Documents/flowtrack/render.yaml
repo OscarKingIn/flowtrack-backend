@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: flowtrack-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn flowtrack.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: False
