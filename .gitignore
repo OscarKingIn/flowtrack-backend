@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+
+# Django
+db.sqlite3
+staticfiles/
+media/
+
+# Environment
+.env
+.env.*
+
+# Frontend
+flowtrack-frontend/
+frontend/
+node_modules/
+
+# OS
+.DS_Store
+
+# Test artifacts
+PERMISSION_TEST_RESULTS.md
+*.log
+
